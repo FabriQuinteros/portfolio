@@ -3,9 +3,16 @@
   "use strict";
 
   $('.color-mode').click(function () {
-    $('.color-mode-icon').toggleClass('active')
-    $('body').toggleClass('dark-mode')
-  })
+    $('body').toggleClass('dark-mode');
+
+    if ($('body').hasClass('dark-mode')) {
+      $('.color-mode-icon').removeClass('fa-moon').addClass('fa-sun');
+      $('.color-mode-text').text('Cambiar a modo claro');
+    } else {
+      $('.color-mode-icon').removeClass('fa-sun').addClass('fa-moon');
+      $('.color-mode-text').text('Cambiar a modo oscuro');
+    }
+  });
 
   $(".navbar").headroom();
 
