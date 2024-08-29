@@ -1,126 +1,294 @@
 <!doctype html>
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Mi Portfolio</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script> 
-            $(function(){
-              $("#contact").load("contact.html"); 
-            });
-            </script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mi Portfolio</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
 
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Mi Portfolio</a>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Portfolio</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#profile" class="nav-link"><span data-hover="Perfil">Perfil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link"><span data-hover="Trayectoria">Trayectoria</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link"><span data-hover="Proyectos">Proyectos</span></a>
+                    </li>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a href="#profile" class="nav-link"><span
-                                    data-hover="Perfil">Perfil</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience" class="nav-link"><span
-                                    data-hover="Experiencias">Experiencias</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link"><span
-                                    data-hover="Proyectos">Proyectos</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link"><span
-                                    data-hover="Contacto">Contacto</span></a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contacto">Contacto</span></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <section
-            class="about full-screen d-lg-flex justify-content-center align-items-center"
-            id="about">
-            <div class="container">
-                <div class="row">
+        </div>
+    </nav>
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Bienvenido a<span class="mobile-block"> mi
+                                portfolio!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Yo soy</span>
+                            <div class="animated-info">
+                                <span class="animated-item" style="color:#C06CEB">Fabricio
+                                    Quinteros</span>
+                                <span class="animated-item" style="color:#C06CEB; display: none;">Desarrollador
+                                    Web</span>
+                                <span class="animated-item" style="color:#C06CEB; display: none;">Full
+                                    Stack</span>
+                            </div>
+                        </h1>
 
-                    <div
-                        class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                        <div class="about-text">
-                            <small class="small-text">Bienvenido a<span
-                                    class="mobile-block"> mi
-                                    portfolio!</span></small>
-                            <h1 class="animated animated-text">
-                                <span class="mr-2">Yo soy</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Fabricio
-                                        Quinteros</span>
-                                    <!-- Mi idea es que los textos vayan cambiando -->
-                                    <!-- <span class="animated-item">Desarrollador
-                                        Web</span>
-                                    <span class="animated-item">Full
-                                        Stack</span> -->
-                                </div>
-                            </h1>
+                        <p>Mi objetivo es ser un profesional altamente
+                            flexible, comprometido con un crecimiento
+                            continuo y la superación personal.</p>
+                        <p>
+                            Aspiro a perfeccionar mis habilidades de
+                            organización y trabajo en equipo, además de
+                            fomentar la creatividad y el ingenio en mi
+                            desarrollo profesional.
+                        </p>
 
-                            <p>Mi objetivo es ser un profesional altamente
-                                flexible, comprometido con un crecimiento
-                                continuo y la superación personal.</p>
+                        <div class="custom-btn-group mt-4">
+                            <a href="https://github.com/FabriQuinteros" class="btn mr-lg-2 custom-btn">Visitar <i
+                                    class='fab fa-github'></i>
+                            </a>
+                            <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contáctame
+                                <i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-                            <p>
-                                Aspiro a perfeccionar mis habilidades de
-                                organización y trabajo en equipo, además de
-                                fomentar la creatividad y el ingenio en mi
-                                desarrollo profesional.
-                            </p>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="rounded-circle overflow-hidden" style="width: 100%; max-width: 400px; margin: 0 auto;">
+                        <img src="img/foto_presentacion.jpg" class="img-fluid" alt="Foto de perfil">
+                    </div>
+                </div>
 
-                            <div class="custom-btn-group mt-4">
-                                <a href="#" class="btn mr-lg-2 custom-btn"><i
-                                        class='uil uil-file-alt'></i>
-                                    Visitar</a>
-                                <a href="#contact"
-                                    class="btn custom-btn custom-btn-bg custom-btn-link">Contáctame
-                                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume pt-5 pb-3 d-lg-flex justify-content-center align-items-center" id="experience">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                    <h2 class="mb-4">Experiencias</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                            <div class="timeline-info">
+                                <h3><span>Desarrollador
+                                        Frontend</span><small>SMARTFENSE</small></h3>
+                                <p>Calculadora de Ransomware Enero 2020 -
+                                    Diciembre 2020</p>
+                                <p>El objetivo de la herramienta es que las
+                                    organizaciones puedan estimar costos a
+                                    los que pueden verse afectadas ante un
+                                    ataque de ransomware exitoso.
+                                </p>
+                                <p>Primer proyecto de tamaño considerable en
+                                    el que aprendí como gestionarme con los
+                                    tiempos y trabajar bajo tareas
+                                    organizadas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-info">
+                                <h3><span>Desarrollador
+                                        Backend</span><small>SMARTFENSE</small></h3>
+                                <p>Diciembre 2020 - Actualidad</p>
+                                <p>Responsable de garantizar el
+                                    funcionamiento óptimo y la mejora
+                                    continua del backend
+                                    del sitio web.</p>
+                                <p>Actualmente colaboro con pruebas
+                                    unitarias y tengo la responsabilidad de
+                                    liderar las
+                                    revisiones de código, lo que me permite
+                                    asegurar la calidad, estabilidad del
+                                    sistema
+                                    de manera efectiva y a su vez promover
+                                    la utilización de buenas practicas.</p>
+                                <p> También lideré la generación automática
+                                    de documentos con la API de Google,
+                                    integrándola en el flujo de trabajo de
+                                    la plataforma. </p>
+                                <p>Utilicé Celery para mejorar la eficiencia
+                                    operativa y escalabilidad, junto con
+                                    Django
+                                    ORM para un acceso seguro y eficiente a
+                                    la base de datos.</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-5 col-md-12 col-12">
-                        <div class="rounded-circle overflow-hidden">
-                            <img
-                                src="img/foto_presentacion.JPG"
-                                class="img-fluid" alt="Foto de perfil">
+                <div class="col-lg-6 col-12">
+                    <h2 class="mb-4 mobile-mt-2">Educación</h2>
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                            <div class="timeline-info">
+                                <h3><span>Ingeniería en Sistemas de
+                                        Información</span><small>UTN
+                                        FRSF</small></h3>
+                                <p>Marzo 2022 - Actualidad</p>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-info">
+                                <h3><span>Tecnicatura en
+                                        Programación</span><small>Escuela
+                                        ProA Técnica</small></h3>
+                                <p>Marzo 2015 - Diciembre 2021</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="contact py-5" id="contact">
-        </section>
-
-        <footer class="footer py-5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <p class="copyright-text text-center">Diseñado por <a
-                                rel="nofollow">Fabricio Quinteros</a></p>
+    <section class="project py-2" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+                    <div class="col-lg-8 mx-auto mb-5">
+                        <h2>Últimos proyectos</h2>
                     </div>
-
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Historial de Maquinaria (Grúas y
+                                    Elevadores)</h3>
+                                <p><strong>Institución:</strong> Axion lift
+                                    (San Francisco, Córdoba)</p>
+                                <p><strong>Periodo:</strong> Septiembre 2021
+                                    - Diciembre 2022</p>
+                                <p>Este proyecto tuvo como objetivo
+                                    digitalizar toda la información que se
+                                    rescata de cada una de las secciones por
+                                    los cuales una maquina circula y poder
+                                    tener una mayor trazabilidad de la
+                                    misma.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Dashboard Power BI</h3>
+                                <p><strong>Institución:</strong> UTN FRSF
+                                    (San Francisco, Córdoba)</p>
+                                <p><strong>Periodo:</strong> Enero 2024 -
+                                    Mayo 2024</p>
+                                <p>Iniciativa que consto en brindar a la
+                                    municipalidad de mi ciudad un tablero
+                                    para poder visualizar y tomar decisiones
+                                    sobre el estacionamiento medido.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+    <section class="contact py-5" id="contact">
+    </section>
+
+    <footer id="footer-neon" style="background-color: #000; color: #fff; padding: 20px; text-align: center;">
+        <div id="neon-clock" class="neon-clock">
+            <span id="hours" class="neon">00</span>:<span id="minutes" class="neon">00</span>:<span id="seconds"
+                class="neon">00</span>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function () {
+            $("#contact").load("contact.html");
+        });
+
+        $(document).ready(function () {
+            var items = $('.animated-info .animated-item');
+            var currentIndex = 0;
+            var colors = ['#BAB9EB', '#4946A6', '#C06CEB'];
+
+            function showNextItem() {
+                items.removeClass('active').hide();
+
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+                currentIndex = (currentIndex + 1) % items.length;
+                items.eq(currentIndex).addClass('active').css('color', randomColor).fadeIn();
+            }
+
+            items.eq(currentIndex).addClass('active').css('color', colors[Math.floor(Math.random() * colors
+                .length)]).show();
+
+            setInterval(showNextItem, 3000);
+
+            var form = $("#contact-form");
+            var submitButton = $("#submit-button");
+
+            form.on('submit', async function (event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                try {
+                    const response = await fetch(form.attr('action'), {
+                        method: form.attr('method'),
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
 
 </html>
