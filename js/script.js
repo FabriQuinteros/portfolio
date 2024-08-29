@@ -2,6 +2,11 @@
 
   "use strict";
 
+  $('.color-mode').click(function () {
+    $('.color-mode-icon').toggleClass('active')
+    $('body').toggleClass('dark-mode')
+  })
+
   $(".navbar").headroom();
 
   $('.owl-carousel').owlCarousel({
